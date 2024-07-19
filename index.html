@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Presidents Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="homePage">
+        <h1>Welcome to the US Presidents Quiz</h1>
+        <input type="text" id="userName" placeholder="Enter your name" />
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quizPage" style="display: none;">
+        <div id="questionContainer">
+            <p id="questionText"></p>
+            <div id="answersContainer"></div>
+        </div>
+        <button id="nextButton" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div id="resultsPage" style="display: none;">
+        <h1>Quiz Results</h1>
+        <p id="resultsText"></p>
+        <button onclick="startOver()">Start Over</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
